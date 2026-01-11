@@ -2,12 +2,7 @@ from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
 from app.api.hello.endpoints import hello_router
-from app.settings.server.general import (
-    ALLOWED_ORIGINS,
-    TITLE,
-    DESCRIPTION,
-    VERSION, API_VERSION
-)
+from app.settings.server.general import ALLOWED_ORIGINS, API_VERSION, DESCRIPTION, TITLE, VERSION
 
 
 def create_app() -> FastAPI:
